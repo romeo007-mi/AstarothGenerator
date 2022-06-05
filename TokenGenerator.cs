@@ -1132,7 +1132,7 @@ public class TokenGenerator
             var captchaTask = new HCaptchaTaskProxyless
             {
                 WebsiteUrl = "https://discord.com/register",
-                WebsiteKey = "f5561ba9-8f1e-40ca-9b5b-a0b3f719ef34",
+                WebsiteKey = "4c672d35-0701-42b2-88c3-78380b0db560",
                 UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
             };
 
@@ -1150,7 +1150,7 @@ public class TokenGenerator
 
             using (HttpClient client = new HttpClient())
             {
-                HttpResponseMessage CaptchaID = client.PostAsync("http://2captcha.com/in.php?key=" + captchaKey + "&method=hcaptcha&sitekey=f5561ba9-8f1e-40ca-9b5b-a0b3f719ef34&pageurl=https://discord.com/register", null).Result;
+                HttpResponseMessage CaptchaID = client.PostAsync("http://2captcha.com/in.php?key=" + captchaKey + "&method=hcaptcha&sitekey=4c672d35-0701-42b2-88c3-78380b0db560&pageurl=https://discord.com/register", null).Result;
 
                 if (CaptchaID.IsSuccessStatusCode)
                 {
